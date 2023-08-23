@@ -1,0 +1,8 @@
+n=int(input())
+List=list(map(str,input().split()))
+#print((all([int(i)>0 for i in List]))and any([((int(str(i)[::-1])==i for i in List))]))
+cond_1=all([int(i)>0 for i in List])
+cond_2=any([i==i[::-1]for i in List])
+print(cond_1 and cond_2)
+
+
