@@ -18,6 +18,7 @@ if __name__ == '__main__':
     #print(List)
     for i,j in List:
         if i>min:
+             print(i)
             a=i
             break
     #print(a)    
