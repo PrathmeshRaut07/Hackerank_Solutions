@@ -1,0 +1,46 @@
+#1st soln
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    nm = input().split()
+
+    n = int(nm[0])
+
+    m = int(nm[1])
+
+    arr = []
+
+    for i in range(n):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    k = int(input())
+    List=[]
+    for i in arr:
+        List.append(i[k])
+    List.sort()
+    for i in List:
+        for j in arr:
+            if i==j[k]:
+                for p in j:
+                    print(p,'',end='')
+                print('')    
+#Solution 2
+'''
+
+    arr.sort(key=lambda x:x[k])
+#print(arr)  
+    for i in arr:
+        for ele in i:
+            print(ele,'',end='')
+        print('')
+      '''            
+                
+                 
+
