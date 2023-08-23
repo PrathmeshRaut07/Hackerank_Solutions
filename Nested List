@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    List=[]    
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        List1=[]
+        List1.append(score)
+        List1.append(name)
+        List.append(List1)
+    min=List[0][0]
+    #print(List)   
+    for i,j in List:
+        #print(i)
+        if i<min:
+            min=i
+    #print(min)        
+    List.sort()
+    #print(List)
+    for i,j in List:
+        if i>min:
+            a=i
+            break
+    #print(a)    
+    for i,j in List:
+        if i==a:
