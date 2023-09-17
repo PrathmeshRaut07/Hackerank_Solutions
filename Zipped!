@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+x,y=map(int,input().split())
+List_1=[]
+for i in range(y):
+    List=list(map(float,input().split()))
+    List_1.append(List)
+z=zip(*List_1)
+for i in z:
+    #print(i)
+    print(sum(i)/y)
